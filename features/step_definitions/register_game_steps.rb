@@ -3,25 +3,25 @@ Given(/^I am on the homepage$/) do
 end
 
 When(/^I see "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+  expect(page).to have_content "Would you like to play a game??"
 end
 
 Then(/^I should click "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+  click_on "Start game"
 end
 
 Given(/^I'm on the Registration page$/) do
-  pending # express the regexp above with the code you wish you had
+  visit ('/new_game')
 end
 
-When(/^I give my name$/) do
-  pending # express the regexp above with the code you wish you had
+When(/^I type my name$/) do
+  fill_in 'name', with: 'Ben'
 end
 
 When(/^I have given my name$/) do
-  pending # express the regexp above with the code you wish you had
+  click_on "Let's go"
 end
 
 Then(/^I should see 'Welcome Ben'$/) do
-  pending # express the regexp above with the code you wish you had
+  expect(page).to have_content "Welcome Ben!"
 end
