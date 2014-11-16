@@ -1,9 +1,11 @@
-Given(/^I am on the homepage$/) do
+require 'sinatra'
+
+Given(/^I am on the Home page$/) do
   visit ('/')
 end
 
 When(/^I see "(.*?)"$/) do |arg1|
-  expect(page).to have_content "Would you like to play a game??"
+  expect(page).to have_content #"Rock, Paper, Scissors!" "Would you like to play a game?" "Start game!"
 end
 
 Then(/^I should click "(.*?)"$/) do |arg1|
@@ -14,7 +16,7 @@ Given(/^I'm on the Registration page$/) do
   visit ('/new_game')
 end
 
-When(/^I type my name$/) do
+When(/^I give my name$/) do
   fill_in 'name', with: 'Ben'
 end
 

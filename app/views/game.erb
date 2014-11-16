@@ -1,0 +1,13 @@
+<h1>Rock, Paper, Scissors</h1>
+
+<h2>Welcome <%= @name %></h2>
+  <p>Choose wisely...</p>
+  <form action="/game/result" method="post">
+  
+    <input type="image" src="rock.png" alt="rock" width="160" height="125" name="players_choice" value="rock">
+
+    <input type="image" src="images/paper.png" alt="paper" width="160" height="125"name="players_choice" value="paper">
+
+    <input type="image" src="public/images/scissors.png" alt="scissors" width="160" height="125" name="players_choice" value="scissors">
+
+  </form>

@@ -1,10 +1,10 @@
 Feature: Registering to play
-  In order ot play a game
+  In order to play a game
   As a player
   I want to register for a game
   
   Scenario: Register for a game
-    Given I am on the homepage
+    Given I am on the Home page
     When I see "Would you like to play a game?"
     Then I should click "Start a new game"
 

@@ -2,20 +2,20 @@
 
 ENV['RACK_ENV'] = 'test'
 
-require File.join(File.dirname(__FILE__), '..', '..', './lib/rock_scissor.rb')
+require File.join(File.dirname(__FILE__), '..', '..', './app/server.rb')
 
 require 'capybara'
 require 'capybara/cucumber'
 require 'rspec'
 
-Capybara.app = RockScissor
+Capybara.app = RockPaperScissors
 
-class RockScissorWorld
+class RockPaperScissorsWorld
   include Capybara::DSL
   include RSpec::Expectations
   include RSpec::Matchers
 end
 
 World do
-  RockScissorWorld.new
+  RockPaperScissorsWorld.new
 end
