@@ -25,5 +25,5 @@ When(/^I have given my name$/) do
 end
 
 Then(/^I should see 'Welcome Ben'$/) do
-  expect(page).to have_content "Welcome Ben!"
+  expect(page).to have_content "Welcome Ben"
 end

@@ -7,10 +7,10 @@ class Game
     @computer = computer
   end
 
-  def winner(player_choice, computer_choice)
+  def winner(players_choice, computers_choice)
     win_combos = {scissors: :paper, rock: :scissors, paper: :rock}
-    return "Draw" if player_choice == computer_choice
-    return "Player wins" if win_combos[player_choice] == computer_choice
+    return "Draw" if players_choice == computers_choice
+    return "Player wins" if win_combos[players_choice] == computers_choice
     return "Computer wins"
 
   end

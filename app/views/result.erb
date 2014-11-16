@@ -1,0 +1,24 @@
+<h1>The results are in...</h1>
+<section class="choice">
+
+  <section class="player_choice">
+  You chose <%= @players_choice %>
+  </section>
+
+  <section class="computer_choice">
+  The computer selected <%= @computers_choice %>
+  </section><br>
+
+  <h4><% if @result == "Player wins" %>
+      <%= @name %> wins!
+    <% elsif @result == "Computer wins" %>
+      Computer wins!
+      Computer is laughing at you...
+    <% else @result == "Draw" %>
+      The game was a Draw! How awkward. 
+    <% end %>
+  </h4>
+
+  </section>
+  
+  <a class="myButton" href="/game">Play again?</a>
