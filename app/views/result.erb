@@ -10,12 +10,17 @@
   </section><br>
 
   <h4><% if @result == "Player wins" %>
-      <%= @name %> wins!
+      <p> <%= @name %> wins! </p>
+      <img src="/images/win.jpg" alt="Draw Pic" style="width:228px;height:304px">
+
     <% elsif @result == "Computer wins" %>
-      Computer wins!
-      Computer is laughing at you...
+      <p>Computer wins! Computer is laughing at you... </p>
+      <img src="/images/crying.jpg" alt="Draw Pic" style="width:304px;height:228px">
+
     <% else @result == "Draw" %>
-      The game was a Draw! How awkward. 
+    <p> The game was a Draw! How awkward. </p>
+      <img src="/images/rps.jpg" alt="Draw Pic" style="width:304px;height:228px">
+      
     <% end %>
   </h4>
 
