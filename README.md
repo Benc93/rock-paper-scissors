@@ -69,5 +69,6 @@ With the minimum specifications of the challenge met, I added a few extra images
 + Reiterate the **Capybara** tests to increase coverage and accuracy.   
 + Some use of **CSS** to make the site aesthetically pleasing.   
       
+[The finished product](https://shielded-oasis-9092.herokuapp.com/)
      
 **END**
